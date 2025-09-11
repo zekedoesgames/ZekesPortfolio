@@ -26,11 +26,36 @@
     }
     .content {
       margin: 2rem auto;
-      max-width: 600px;
+      max-width: 700px;
       background: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin: 2rem 0;
+    }
+    h2 {
+      color: #222;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: default;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -41,8 +66,32 @@
   </header>
   
   <div class="content">
-    <p>I’ve been a Roblox developer for 2 years, and started working with Unity in late 2025.</p>
-    <p>Welcome to my GitHub page — I make Unity games and cool projects.</p>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I’ve been a Roblox developer for 2 years, and started working with Unity in late 2025.</p>
+      <p>I enjoy creating fun, interactive experiences and experimenting with new game mechanics.</p>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <p>
+        <a href="https://create.roblox.com/dashboard/creations/experiences/8608981836/overview" class="disabled">
+          Snatch a Meme (Coming Soon)
+        </a> — Roblox experience currently in development.
+      </p>
+      <p><a href="#">Unity Prototype</a> — Early work on a 3D platformer.</p>
+      <p><em>(More coming soon!)</em></p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/zekedoesgames">github.com/zekedoesgames</a></p>
+    </div>
   </div>
+
+  <footer>
+    <p>© 2025 Zeke — Built with ❤️ using GitHub Pages</p>
+  </footer>
 </body>
 </html>
